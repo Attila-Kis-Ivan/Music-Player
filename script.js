@@ -16,17 +16,17 @@ const nextBtn = document.getElementById('next');
 // Music
 const songs = [
     {
-      name: 'tdb.-1',
+      name: 'tdb-1',
       displayName: 'Electric Chill Machine',
       artist: 'TDB-Design',
     },
     {
-      name: 'tdb.-2',
+      name: 'tdb-2',
       displayName: 'Seven Nation Army (Remix)',
       artist: 'TDB-Design',
     },
     {
-      name: 'tdb.-3',
+      name: 'tdb-3',
       displayName: 'Goodnight, Disco Queen',
       artist: 'TDB-Design',
     },
@@ -58,3 +58,14 @@ const songs = [
 
   // play or pause event listener
   playBtn.addEventListener('click' , () => ( isPlaying ? pauseSong() : playSong()));
+
+//   Update Dome
+function loadSong(song) {
+    title.textContent = song.displayName;
+    artist.textContent = song.artist;
+    music.src = `music/${song.name}.mp3`;
+    image.src = `img/${song.name}.jpg`;
+}
+
+// On load
+loadSong(songs[1]);
