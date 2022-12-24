@@ -25,6 +25,7 @@ body {
   border-radius: 20px;
   box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
 
+
 }
 
 .img-container {
@@ -70,8 +71,7 @@ h3 {
   background: #242323;
   border-radius: 5px;
   height: 100%;
-  /* change this to show progress */
-  width: 66%;
+  width: 0%;
   transition: width 0.1s linear;
 }
 
@@ -89,6 +89,7 @@ h3 {
   left: 120px;
   width: 200px;
 }
+
 
 .fa-solid {
   font-size: 30px;
